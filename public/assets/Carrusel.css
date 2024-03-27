@@ -1,0 +1,141 @@
+.carousel{
+    position: relative;
+    justify-content: center;
+    width: 975px;
+    left: 225px;
+  }
+  .carousel__contenedor{
+    position: relative;
+  }
+  .carousel__anterior,
+  .carousel__siguiente{
+    position: absolute;
+    display: block;
+    width: 28.5px;
+    height: 28.5px;
+    border: none;
+    top: calc(50%);
+    cursor: pointer;
+    line-height: 22.5px;
+    text-align: center;
+    background-color: #FFF;
+    border-radius: 26.26px;
+    color: #000;
+  }
+  .carousel__anterior2,
+  .carousel__siguiente2{
+    position: absolute;
+    display: block;
+    width: 28.5px;
+    height: 28.5px;
+    border: none;
+    top: calc(50%);
+    cursor: pointer;
+    line-height: 22.5px;
+    text-align: center;
+    background-color: #FFF;
+    border-radius: 26.26px;
+    color: #000;
+  }
+  .carousel__anterior3,
+  .carousel__siguiente3{
+    position: absolute;
+    display: block;
+    width: 28.5px;
+    height: 28.5px;
+    border: none;
+    top: calc(50%);
+    cursor: pointer;
+    line-height: 22.5px;
+    text-align: center;
+    background-color: #FFF;
+    border-radius: 26.26px;
+    color: #000;
+  }
+  .carousel__anterior,
+  .carousel__anterior2,
+  .carousel__anterior3{
+    left: -33.75px;
+  }
+  .carousel__siguiente,
+  .carousel__siguiente2,
+  .carousel__siguiente3{
+    right: -33.75px;
+  }
+  .carousel_lista,
+  .carousel_lista2,
+  .carousel_lista3{
+    overflow: hidden;
+    display: flex;
+  }
+  .carousel__elemento{
+    background-color: #D0D0ED;
+    width: 480px;
+    height: 225px;
+    margin: 37.5px 15px 15px 15px;
+    display: flex;
+    padding: 7.5px;
+  }.carousel__elemento2{
+    background-color: #D0D0ED;
+    width: 480px;
+    height: 225px;
+    margin: 37.5px 15px 15px 15px;
+    display: flex;
+    padding: 7.5px;
+  }
+  .carousel__ele-inside{
+    padding: 7.5px;
+    width: 405px;
+    height: auto;
+    top: 56.25px;
+    position: absolute;
+  }.carousel__ele-inside font{
+    margin-bottom: 20px;
+  }
+  .carousel__ele-inside3{
+    padding: 7.5px;
+    width: 427.5px;
+    height: auto;
+    top: 56.25px;
+    position: absolute;
+    text-align: center;
+  }
+  .carousel__ele-insideA3{
+    position: absolute;
+    text-align: left;
+    flex-basis: 60%;
+  }
+  .carousel__ele-insideA{
+    position: absolute;
+    text-align: left;
+    flex-basis: 60%;
+  }
+  .carousel__ele-insideB{
+    text-align: right;
+  }
+  .carousel__elemento img{
+    height: 280px;
+    justify-content: center;
+    opacity: 10%;
+  }
+  .carousel__elemento2 img{
+    height: 280px;
+    justify-content: center;
+    opacity: 10%;
+  }
+  .btn-1{
+    display: inline-block;
+    padding: 9px 41.25px;
+    border: 1px solid #6A0209;
+    border-radius: 25px;
+    color: #6A0209;
+    text-decoration: none;
+    background: none;
+    margin-top: 37.5px;
+    cursor: pointer;
+  }
+  .btn-1:hover {
+    color: white;
+    background-color: #6A0209;
+    font-weight: bold;
+  }

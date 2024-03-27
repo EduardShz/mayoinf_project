@@ -22,7 +22,7 @@
 
     <body>
         
-        <section class="vh-100 gradient-custom">
+        <section class="vh-300 gradient-custom">
             <div class="container py-4 h-100">
               <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-12 col-md-8 col-lg-6 col-xl-7">
@@ -56,6 +56,21 @@
                                 <label class="fw-bold form-label d-flex justify-content-left" for="email">Correo Electrónico</label>  
                                 <input type="email" name="email" id="email" class="form-control form-control-lg" placeholder="Ingresar Correo"/>
                             </div>
+                        </div>
+
+                        <label class="fw-bold form-label d-flex justify-content-left" for="sexo">Género</label>
+                        <div class="form-outline form-white mb-4 d-flex justify-content-left">
+                          <div class="form-check form-check-inline d-flex justify-content-left">
+                            <input class="form-check-input" type="radio" name="sexo" id="maleGender"
+                              value="0"/>
+                            <label class="form-check-label" for="maleGender">Hombre</label>
+                          </div>
+        
+                          <div class="form-check form-check-inline d-flex justify-content-left">
+                            <input class="form-check-input" type="radio" name="sexo" id="femaleGender"
+                              value="1" />
+                            <label class="form-check-label" for="femaleGender">Mujer</label>
+                          </div>
                         </div>
           
                         <div class="form-outline form-white mb-4">

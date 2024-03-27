@@ -3,17 +3,17 @@
 namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
-use App\Models\Personas;
+use App\Models\Tipo_Estados;
 use Illuminate\Http\Request;
 
-class PersonasController extends Controller
+class Tipo_EstadosController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        echo "Index";
+        //
     }
 
     /**
@@ -21,10 +21,7 @@ class PersonasController extends Controller
      */
     public function create()
     {
-      $empresas = Empresa::get();
-      dd($empresas);
-      
-      echo view('dashboard.personas.create');
+        //
     }
 
     /**
@@ -32,23 +29,21 @@ class PersonasController extends Controller
      */
     public function store(Request $request)
     {
-        dd(request("nombre"));
-        echo($request->all);
+        //
     }
 
     /**
      * Display the specified resource.
      */
-    public function show($id)
+    public function show(Tipo_Estados $tipo_Estados)
     {
-        $personas = Personas::find($id);
-        return compact('peronas');
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Personas $personas)
+    public function edit(Tipo_Estados $tipo_Estados)
     {
         //
     }
@@ -56,7 +51,7 @@ class PersonasController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Personas $personas)
+    public function update(Request $request, Tipo_Estados $tipo_Estados)
     {
         //
     }
@@ -64,7 +59,7 @@ class PersonasController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Personas $personas)
+    public function destroy(Tipo_Estados $tipo_Estados)
     {
         //
     }

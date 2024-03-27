@@ -1,0 +1,38 @@
+header {
+    background: linear-gradient(to right, rgb(38, 98, 228), rgb(8, 22, 150));
+    font-family: Leelawadee UI;;
+    align-items: center;
+    font-size: 1.3rem;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    padding: 7.5px;
+    z-index: 100;
+    position: sticky;
+    top:0;
+}header img{
+    width: 7rem;
+    padding-left: 12.4px;
+}
+header .top{
+    display: relative;
+}header .bottom{
+    display: flex;
+    justify-content: space-between;
+}header .top a{
+    text-decoration: none;
+    margin: 12.5px 12.5px 12.5px 12.5px;
+    color: #FFF;
+    transition: .4s;
+}header .bottom a{
+    text-decoration: none;
+    margin-right: 15px;
+    color: #FFF;
+    transition: .4s;
+}header .top a:hover,
+header .bottom a:hover{
+    text-decoration: underline;
+    background-color: #040421;
+    padding: 10px;
+    transition: .4s;
+}

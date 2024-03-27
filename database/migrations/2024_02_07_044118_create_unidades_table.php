@@ -20,6 +20,7 @@ return new class extends Migration
             $table->foreignId('marca_id')->constrained()->onDelete('cascade');
             $table->foreignId('tipo_unidade_id')->constrained()->onDelete('cascade');
             $table->foreignId('tipo_estado_id')->constrained()->onDelete('cascade');
+            $table->foreignId('persona_id')->constrained()->onDelete('cascade');
         });
     }
 

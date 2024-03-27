@@ -3,10 +3,10 @@
 namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
-use App\Models\Personas;
+use App\Models\Unidades;
 use Illuminate\Http\Request;
 
-class PersonasController extends Controller
+class UnidadesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -21,10 +21,7 @@ class PersonasController extends Controller
      */
     public function create()
     {
-      $empresas = Empresa::get();
-      dd($empresas);
-      
-      echo view('dashboard.personas.create');
+        echo view('dashboard.unidades.create');
     }
 
     /**
@@ -32,23 +29,22 @@ class PersonasController extends Controller
      */
     public function store(Request $request)
     {
-        dd(request("nombre"));
+        dd(request("descripcion"));
         echo($request->all);
     }
 
     /**
      * Display the specified resource.
      */
-    public function show($id)
+    public function show(Unidades $unidades)
     {
-        $personas = Personas::find($id);
-        return compact('peronas');
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Personas $personas)
+    public function edit(Unidades $unidades)
     {
         //
     }
@@ -56,7 +52,7 @@ class PersonasController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Personas $personas)
+    public function update(Request $request, Unidades $unidades)
     {
         //
     }
@@ -64,7 +60,7 @@ class PersonasController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Personas $personas)
+    public function destroy(Unidades $unidades)
     {
         //
     }
